@@ -53,8 +53,7 @@ namespace myBlog.Controllers
             if (await _repo.SaveChangeAsync())
                     return RedirectToAction("Index");
             else
-                    return View(post);
-            
+                    return View(post);  
         }
 
         [HttpGet]
